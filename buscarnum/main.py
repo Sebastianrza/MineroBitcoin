@@ -4,9 +4,9 @@ import re
 if __name__ == "__main__":
    nonce = 0
    T = True
-   file = open("/home/Sebastianrza/fichero1.txt", 'w')
+   file = open("ruta fichero")
    while T:
-      inputFile = open("/home/Sebastianrza/fichero1.txt")
+      inputFile = open("ruta fichero")
       readFile = inputFile.read()
       hash = hashlib.sha1(readFile.encode())
       print(hash.hexdigest())
@@ -15,10 +15,10 @@ if __name__ == "__main__":
          file.close()
          T = False
       else:
-         file = open("/home/Sebastianrza/fichero1.txt", 'w')
+         file = open("ruta fichero", 'w')
          nonce=nonce+1
-         file.write('Nombre y Apellidos: Sebastian Rafael Zambrano Azuaje\n')
-         file.write('Hash Previo: 008AD9491CABD7BD6291D32503647CC191EECC8F\n')
+         file.write('Nombre y Apellidos: \n')
+         file.write('Hash Previo: ******************(si lo hay)***************\n')
          file.write('Nonce: '+str(nonce))
          file.close()
        
