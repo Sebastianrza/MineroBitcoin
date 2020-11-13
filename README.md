@@ -12,3 +12,6 @@ Nonce: ****
 Hash:
 
 SHA1 (block) = *********************************************
+
+It's necessary have installing pip,re and hashlib (pip3 install re, pip3 install hashlib)
+
